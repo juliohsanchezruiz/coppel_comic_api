@@ -21,6 +21,9 @@ services:
     volumes:
       - ./app:/app
     networks:
-      - default
+      - coppel
 volumes:
   persistent:
+networks:
+  coppel:
+    driver: bridge

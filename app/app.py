@@ -181,3 +181,4 @@ def get_comic(id):
                 }
                 comics["data"].append(c)
             return Response(response=json.dumps(comics), status=200, mimetype='application/json')
+    return Response(response=json.dumps({"mensaje":"comic no existe"}), status=400, mimetype='application/json')
